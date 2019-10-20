@@ -1,12 +1,10 @@
-// protoc --gogofaster_out=. ./math/proto/proto.proto
-
 syntax = "proto3";
 
 package proto;
 
 service Math {
-  rpc Add(MathAddArgs) returns (MathAddArgs) {};
-  rpc Subtract(MathSubtractArgs) returns (MathSubtractArgs) {};
+  rpc Add(MathAddArgs) returns (MathAddReply) {};
+  rpc Subtract(MathSubtractArgs) returns (MathSubtractReply) {};
 }
 
 message MathAddArgs {

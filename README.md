@@ -6,8 +6,8 @@ A simple math GRPC microservice and client, for the purpose of learning and eval
 
 - Add numbers
 - Subtract numbers
-- [Server as binary](./cmd/math-server/main.go)
-- [Client as binary](./cmd/math-client/main.go)
+- [Server as binary](./cmd/rpcx-math-server/main.go)
+- [Client as binary](./cmd/rpcx-math-client/main.go)
 - [Client as library](./math/clientlib/clientlib.go)
 
 ## License

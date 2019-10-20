@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/pojntfx/rpcx-math/math/service"
+	"github.com/pojntfx/rpcx-math/math/svc"
 	"github.com/smallnest/rpcx/server"
 	"log"
 )
@@ -13,7 +13,7 @@ func main() {
 	flag.Parse()
 
 	s := server.NewServer()
-	s.RegisterName("Math", new(service.Math), "")
+	s.RegisterName("Math", new(svc.Math), "")
 	err := s.Serve("tcp", *addr)
 
 	if err != nil {
